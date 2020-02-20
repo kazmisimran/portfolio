@@ -32,7 +32,7 @@ export default function Resume() {
 
 
 
-            <footer className='d-flex justify-content-between' id="footer">
+            <footer className='d-flex justify-content-between mt-5' id="footer">
                 <div className="copy mx-5">
                     <p id="p-copy">© Sim. All rights reserved.</p>
                 </div>
@@ -63,16 +63,16 @@ export default function Resume() {
                         </div>
                     </div>
                     <div className="row desc mt-4">
-                        <div className="col-2"></div>
-                        <div className="col-3">
+                        <div className="col-md-2"></div>
+                        <div className="col-md-3 col-4">
                             <p> <span>Name: </span> Simran Kazmi</p>
                             <p> <span>Citizenship: </span> Belgium</p>
                         </div>
-                        <div className="col-3">
+                        <div className="col-md-3 col-4">
                             <p><span>Age: </span>20 Years</p>
                             <p><span>Residence: </span>Brussels</p>
                         </div>
-                        <div className="col-3">
+                        <div className="col-md-3 col-4">
                             <p><span>Job: </span>Web developer</p>
                             <p><span>E-mail: </span>kazmisimran@gmail.com</p>
                         </div>
@@ -83,7 +83,7 @@ export default function Resume() {
             <section className="section resume container mb-5">
                 <div className="content">
                     <div className="row">
-                        <div className="col-6">
+                        <div className="col-md-6 col-12">
                             <div className="title mb-5">
                                 <div className="title_inner">EXPERIENCE</div>
                             </div>
@@ -109,7 +109,7 @@ export default function Resume() {
 
                             </div>
                         </div>
-                        <div className="col-6">
+                        <div className="col-md-6 col-12">
                             <div className="title mb-5">
                                 <div className="title_inner">EDUCATION</div>
                             </div>
@@ -263,6 +263,51 @@ export default function Resume() {
                     </div>
                 </div>
             </section>
+
+            <section className="section skills container pb-5 mb-5">
+                <div className="content mb-5">
+                    <div className="title mb-5">
+                        <div className="title_inner">CODING SKILLS</div>
+                    </div>
+                    <div className="skills circle row">
+                       <div className="d-flex flex-column align-items-center mr-5 col-md-2 col-12">
+                       <div class="radialProgressBar progress-100  d-flex flex-column">
+                            <div class="overlay">100%</div>
+                        </div>
+                        <div>
+                            <p className="">WordPress</p>
+                        </div>
+                       </div>
+                       <div className="d-flex flex-column align-items-center mr-5 col-md-2 col-12">
+                       <div class="radialProgressBar progress-100  d-flex flex-column">
+                            <div class="overlay">100%</div>
+                        </div>
+                        <div>
+                            <p className="">PHP / MYSQL</p>
+                        </div>
+                       </div>
+                       <div className="d-flex flex-column align-items-center mr-5 col-md-2 col-12">
+                       <div class="radialProgressBar progress-100  d-flex flex-column">
+                            <div class="overlay">100%</div>
+                        </div>
+                        <div>
+                            <p className="">Angular /<br/> Javascript</p>
+                        </div>
+                       </div>
+                       <div className="d-flex flex-column align-items-center mr-5 col-md-2 col-12">
+                       <div class="radialProgressBar progress-100  d-flex flex-column">
+                            <div class="overlay">100%</div>
+                        </div>
+                        <div>
+                            <p className="">HTML / CSS</p>
+                        </div>
+                       </div>
+                       
+                    </div>
+                </div>
+            </section>
+
+          
 
 
 
