@@ -5,11 +5,15 @@ export default function Resume() {
 
     window.onscroll = () => {
         let target = document.getElementById('target');
-        if (window.pageYOffset < 190) {
-            target.style.display = "block";
+        if (window.pageYOffset < 70) {
+            // target.style.display = "block";
+            target.classList.add('d-block');
+            target.classList.remove('d-none');
         }
-        else if (window.pageYOffset > 190) {
-            target.style.display = "none";
+        else if (window.pageYOffset > 70) {
+            // target.style.display = "none";
+            target.classList.add('d-none');
+            target.classList.remove('d-block');
         }
     }
     return (
@@ -24,7 +28,7 @@ export default function Resume() {
                 <p className> <a href="/home">Home</a> / <a href="/resume">Resume</a> </p>
 
                 <a href="#" className="mouse">
-                    <div className="my-5" id="target">
+                    <div className="my-5" id="target" className="d-block">
                         <i class="fas fa-mouse"></i>
                     </div>
                 </a>
@@ -265,49 +269,139 @@ export default function Resume() {
             </section>
 
             <section className="section skills container pb-5 mb-5">
-                <div className="content mb-5">
+                <div className="content ">
                     <div className="title mb-5">
                         <div className="title_inner">CODING SKILLS</div>
                     </div>
                     <div className="skills circle row">
-                       <div className="d-flex flex-column align-items-center mr-5 col-md-2 col-12">
-                       <div class="radialProgressBar progress-100  d-flex flex-column">
-                            <div class="overlay">100%</div>
+                        <div className="d-flex flex-column align-items-center mr-5 col-md-2 col-12">
+                            <div class="radialProgressBar progress-100  d-flex flex-column">
+                                <div class="overlay">100%</div>
+                            </div>
+                            <div>
+                                <p className="">WordPress</p>
+                            </div>
                         </div>
-                        <div>
-                            <p className="">WordPress</p>
+                        <div className="d-flex flex-column align-items-center mr-5 col-md-2 col-12">
+                            <div class="radialProgressBar progress-100  d-flex flex-column">
+                                <div class="overlay">100%</div>
+                            </div>
+                            <div>
+                                <p className="">PHP / MYSQL</p>
+                            </div>
                         </div>
-                       </div>
-                       <div className="d-flex flex-column align-items-center mr-5 col-md-2 col-12">
-                       <div class="radialProgressBar progress-100  d-flex flex-column">
-                            <div class="overlay">100%</div>
+                        <div className="d-flex flex-column align-items-center mr-5 col-md-2 col-12">
+                            <div class="radialProgressBar progress-100  d-flex flex-column">
+                                <div class="overlay">100%</div>
+                            </div>
+                            <div>
+                                <p className="">Angular /<br /> Javascript</p>
+                            </div>
                         </div>
-                        <div>
-                            <p className="">PHP / MYSQL</p>
+                        <div className="d-flex flex-column align-items-center mr-5 col-md-2 col-12">
+                            <div class="radialProgressBar progress-100  d-flex flex-column">
+                                <div class="overlay">100%</div>
+                            </div>
+                            <div>
+                                <p className="">HTML / CSS</p>
+                            </div>
                         </div>
-                       </div>
-                       <div className="d-flex flex-column align-items-center mr-5 col-md-2 col-12">
-                       <div class="radialProgressBar progress-100  d-flex flex-column">
-                            <div class="overlay">100%</div>
-                        </div>
-                        <div>
-                            <p className="">Angular /<br/> Javascript</p>
-                        </div>
-                       </div>
-                       <div className="d-flex flex-column align-items-center mr-5 col-md-2 col-12">
-                       <div class="radialProgressBar progress-100  d-flex flex-column">
-                            <div class="overlay">100%</div>
-                        </div>
-                        <div>
-                            <p className="">HTML / CSS</p>
-                        </div>
-                       </div>
-                       
+
                     </div>
                 </div>
             </section>
 
-          
+            <section className="section skills container mb-5">
+                <div className="content mb-5">
+                    <div className="title mb-5">
+                        <div className="title_inner">KNOWLEDGE</div>
+                    </div>
+                    <div className="skills list row">
+                        <ul className="d-flex flex-column list-unstyled mb-5 knowledge-list col-md-6 ">
+                            <li><i class="fas fa-check mx-2 my-2"></i>Website hosting</li>
+                            <li><i class="fas fa-check mx-2 my-2"></i>Create logo design</li>
+                            <li><i class="fas fa-check mx-2 my-2"></i>Modern and mobile-ready</li>
+                            <li><i class="fas fa-check mx-2 my-2"></i>Graphics and animations</li>
+                        </ul>
+                        <ul className="d-flex flex-column list-unstyled mb-5 knowledge-list col-md-6 ">
+                            <li><i class="fas fa-check mx-2 my-2"></i>Website hosting</li>
+                            <li><i class="fas fa-check mx-2 my-2"></i>Create logo design</li>
+                            <li><i class="fas fa-check mx-2 my-2"></i>Modern and mobile-ready</li>
+                            <li><i class="fas fa-check mx-2 my-2"></i>Graphics and animations</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section className="section service container mb-5 pb-5">
+                <div className="content">
+                    <div className="title mb-5">
+                        <div className="title_inner">MY SERVICES</div>
+                    </div>
+                    <div className="service items">
+                        <div className="row">
+                            <div className="col-md-4 service-item">
+                                <div className="row mb-3 align-items-center">
+                                    <i className="fab fa-html5 mr-3 "></i>
+                                    <p className="font-weight-bold mt-2">Front-end</p>
+                                </div>
+                                <div className="row">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                </div>
+                            </div>
+                            <div className="col-md-4 service-item">
+                                <div className="row mb-3 align-items-center">
+                                    <i class="fas fa-mobile mr-3"></i>
+                                    <p className="font-weight-bold mt-2">Mobile app</p>
+                                </div>
+                                <div className="row">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                </div>
+                            </div>
+                            <div className="col-md-4 service-item">
+                                <div className="row mb-3 align-items-center">
+                                    <i className="fas fa-search mr-3 "></i>
+                                    <p className="font-weight-bold mt-2">Investigation</p>
+                                </div>
+                                <div className="row">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row mt-4">
+                            <div className="col-md-4 service-item">
+                                <div className="row mb-3 align-items-center">
+                                    <i class="fas fa-code mr-3"></i>
+                                    <p className="font-weight-bold mt-2">Programming</p>
+                                </div>
+                                <div className="row">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                </div>
+                            </div>
+                            <div className="col-md-4 service-item">
+                                <div className="row mb-3 align-items-center">
+                                    <i className="fas fa-life-ring mr-3 "></i>
+                                    <p className="font-weight-bold mt-2">Front-end</p>
+                                </div>
+                                <div className="row">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                </div>
+                            </div>
+                            <div className="col-md-4 service-item">
+                                <div className="row mb-3 align-items-center">
+                                    <i class="fab fa-chrome mr-3"></i>
+                                    <p className="font-weight-bold mt-2">Web development</p>
+                                </div>
+                                <div className="row">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
 
 
 

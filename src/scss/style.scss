@@ -1,4 +1,6 @@
 @import "./../../node_modules/bootstrap/scss/bootstrap.scss";
+$mainColor : #F4AC45;
+$secondColor: #AEDCC0;
 
 body{
     height: 90vh;
@@ -29,7 +31,7 @@ nav{
 
 
 #contacts:hover , #contacts:focus{
-    background-color: #ff5e94 !important;
+    background-color: $mainColor!important;
 
     color: white !important;
 }
@@ -40,7 +42,7 @@ a{
 }
 
 a:hover , a:focus{
-    color: #ff5e94 !important;
+    color: $mainColor !important;
 }
 
 //FRAME FIX
@@ -50,7 +52,7 @@ a:hover , a:focus{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #ff5e94;
+    background-color: $mainColor;
     z-index: 200;
 
 }
@@ -61,7 +63,7 @@ a:hover , a:focus{
     position: fixed;
     bottom: 0;
     left: 0;
-    background-color: #ff5e94;
+    background-color: $mainColor;
     z-index: 200;
 }
 
@@ -71,7 +73,7 @@ a:hover , a:focus{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #ff5e94;
+    background-color: $mainColor;
     z-index: 200;
 
 }
@@ -82,7 +84,7 @@ a:hover , a:focus{
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #ff5e94;
+    background-color: $mainColor;
     z-index: 200;
 
 }
@@ -107,7 +109,7 @@ a:hover , a:focus{
     bottom: 80px;
     margin-left: -10px;
    .fa-mouse{
-    color:#ff5e94 !important ;
+    color:$mainColor !important ;
     font-size: 24px;
    }
 }
@@ -140,7 +142,7 @@ a:hover , a:focus{
     color: #141414;
     text-transform: uppercase;
     letter-spacing: 0.04em;
-    box-shadow: inset 0 -6px 0px #5effc9 ;
+    box-shadow: inset 0 -6px 0px $secondColor ;
 }
 
 .about{
@@ -152,7 +154,7 @@ a:hover , a:focus{
 }
 
 span{
-    color:#ff5e94;
+    color:$mainColor;
 }
 
 img{
@@ -166,7 +168,7 @@ img{
     font-family: 'Courier New', Courier, monospace;
 }
 .resume-items .resume-item{
-    border-left: solid 1px #ff5e94;
+    border-left: solid 1px $mainColor;
 }
 .resume-items .resume-item .date {
     position: relative;
@@ -179,8 +181,8 @@ img{
     font-weight: 500;
     font-size: 13px;
     font-family: 'Courier New', Courier, monospace;
-    color: #ff5e94;
-    border: 1px solid #ff5e94;
+    color: $mainColor;
+    border: 1px solid $mainColor;
 }
 .resume-items .resume-item .name{
     font-size: 13px;
@@ -196,7 +198,7 @@ img{
 }
 
 .progress-bar{
-  background-color: #ff5e94 !important;
+  background-color: $mainColor !important;
 }
 
 //LANGUAGES SKILLS
@@ -215,7 +217,7 @@ img{
       display: block;
       width: 14px;
       height: 14px;
-      background: #ff5e94;
+      background: $mainColor;
       border-radius: 14px;
     }
   }
@@ -244,7 +246,20 @@ img{
 }
 //pas compris:
 .progress-100 {
-  background-image: linear-gradient( #ff5e94  50%, transparent 50%), linear-gradient( #ddd 50%, #ddd  50%);}
+  background-image: linear-gradient( $mainColor  50%, transparent 50%), linear-gradient( #ddd 50%, #ddd  50%);}
+
+
+//KNOWLEDGE
+i{
+  color: $mainColor !important;
+}
+
+//SERVICES
+.service-item {
+  i{
+    font-size: 30px;
+  }
+}
 //FOOTER
 #footer , #footer-home{
     position: fixed;
@@ -513,7 +528,7 @@ p{
   content: attr(data-text);
   position: absolute;
   left: -2px;
-  text-shadow: 3px 0 #ff5e94;
+  text-shadow: 3px 0 $mainColor;
   top: 2px;
   color:  black;
   overflow: hidden;

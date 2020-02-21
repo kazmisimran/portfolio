@@ -10790,7 +10790,7 @@ nav {
 }
 
 #contacts:hover, #contacts:focus {
-  background-color: #ff5e94 !important;
+  background-color: #F4AC45 !important;
   color: white !important;
 }
 
@@ -10800,7 +10800,7 @@ a {
 }
 
 a:hover, a:focus {
-  color: #ff5e94 !important;
+  color: #F4AC45 !important;
 }
 
 #line-top {
@@ -10809,7 +10809,7 @@ a:hover, a:focus {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #ff5e94;
+  background-color: #F4AC45;
   z-index: 200;
 }
 
@@ -10819,7 +10819,7 @@ a:hover, a:focus {
   position: fixed;
   bottom: 0;
   left: 0;
-  background-color: #ff5e94;
+  background-color: #F4AC45;
   z-index: 200;
 }
 
@@ -10829,7 +10829,7 @@ a:hover, a:focus {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #ff5e94;
+  background-color: #F4AC45;
   z-index: 200;
 }
 
@@ -10839,7 +10839,7 @@ a:hover, a:focus {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: #ff5e94;
+  background-color: #F4AC45;
   z-index: 200;
 }
 
@@ -10862,7 +10862,7 @@ a:hover, a:focus {
 }
 
 .mouse .fa-mouse {
-  color: #ff5e94 !important;
+  color: #F4AC45 !important;
   font-size: 24px;
 }
 
@@ -10913,8 +10913,8 @@ a:hover, a:focus {
   color: #141414;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  -webkit-box-shadow: inset 0 -6px 0px #5effc9;
-          box-shadow: inset 0 -6px 0px #5effc9;
+  -webkit-box-shadow: inset 0 -6px 0px #AEDCC0;
+          box-shadow: inset 0 -6px 0px #AEDCC0;
 }
 
 .about {
@@ -10925,7 +10925,7 @@ a:hover, a:focus {
 }
 
 span {
-  color: #ff5e94;
+  color: #F4AC45;
 }
 
 img {
@@ -10940,7 +10940,7 @@ img {
 }
 
 .resume-items .resume-item {
-  border-left: solid 1px #ff5e94;
+  border-left: solid 1px #F4AC45;
 }
 
 .resume-items .resume-item .date {
@@ -10954,8 +10954,8 @@ img {
   font-weight: 500;
   font-size: 13px;
   font-family: 'Courier New', Courier, monospace;
-  color: #ff5e94;
-  border: 1px solid #ff5e94;
+  color: #F4AC45;
+  border: 1px solid #F4AC45;
 }
 
 .resume-items .resume-item .name {
@@ -10970,7 +10970,7 @@ img {
 }
 
 .progress-bar {
-  background-color: #ff5e94 !important;
+  background-color: #F4AC45 !important;
 }
 
 .prog {
@@ -10995,7 +10995,7 @@ img {
   display: block;
   width: 14px;
   height: 14px;
-  background: #ff5e94;
+  background: #F4AC45;
   border-radius: 14px;
 }
 
@@ -11021,8 +11021,16 @@ img {
 }
 
 .progress-100 {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ff5e94), color-stop(50%, transparent)), -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ddd), color-stop(50%, #ddd));
-  background-image: linear-gradient(#ff5e94 50%, transparent 50%), linear-gradient(#ddd 50%, #ddd 50%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #F4AC45), color-stop(50%, transparent)), -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ddd), color-stop(50%, #ddd));
+  background-image: linear-gradient(#F4AC45 50%, transparent 50%), linear-gradient(#ddd 50%, #ddd 50%);
+}
+
+i {
+  color: #F4AC45 !important;
+}
+
+.service-item i {
+  font-size: 30px;
 }
 
 #footer, #footer-home {
@@ -11513,7 +11521,7 @@ p {
   content: attr(data-text);
   position: absolute;
   left: -2px;
-  text-shadow: 3px 0 #ff5e94;
+  text-shadow: 3px 0 #F4AC45;
   top: 2px;
   color: black;
   overflow: hidden;
