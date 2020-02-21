@@ -10766,6 +10766,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   height: 90vh;
+  font-family: 'Courier New', Courier, monospace !important;
 }
 
 #root {
@@ -10773,6 +10774,18 @@ body {
   margin: 30px;
   overflow: hidden;
   background-color: white;
+}
+
+#870058 .myfont {
+  font-family: 'Courier New', Courier, monospace !important;
+}
+
+.bg-mainColor {
+  background-color: #870058 !important;
+}
+
+.secondColor {
+  color: #AEDCC0 !important;
 }
 
 nav {
@@ -10790,7 +10803,7 @@ nav {
 }
 
 #contacts:hover, #contacts:focus {
-  background-color: #F4AC45 !important;
+  background-color: #870058 !important;
   color: white !important;
 }
 
@@ -10800,7 +10813,7 @@ a {
 }
 
 a:hover, a:focus {
-  color: #F4AC45 !important;
+  color: #870058 !important;
 }
 
 #line-top {
@@ -10809,7 +10822,7 @@ a:hover, a:focus {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #F4AC45;
+  background-color: #870058;
   z-index: 200;
 }
 
@@ -10819,7 +10832,7 @@ a:hover, a:focus {
   position: fixed;
   bottom: 0;
   left: 0;
-  background-color: #F4AC45;
+  background-color: #870058;
   z-index: 200;
 }
 
@@ -10829,7 +10842,7 @@ a:hover, a:focus {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #F4AC45;
+  background-color: #870058;
   z-index: 200;
 }
 
@@ -10839,7 +10852,7 @@ a:hover, a:focus {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: #F4AC45;
+  background-color: #870058;
   z-index: 200;
 }
 
@@ -10862,7 +10875,7 @@ a:hover, a:focus {
 }
 
 .mouse .fa-mouse {
-  color: #F4AC45 !important;
+  color: #870058 !important;
   font-size: 24px;
 }
 
@@ -10925,10 +10938,10 @@ a:hover, a:focus {
 }
 
 span {
-  color: #F4AC45;
+  color: #870058;
 }
 
-img {
+#sim {
   max-width: 100px;
   max-height: 100px;
   display: block;
@@ -10940,7 +10953,7 @@ img {
 }
 
 .resume-items .resume-item {
-  border-left: solid 1px #F4AC45;
+  border-left: solid 1px #870058;
 }
 
 .resume-items .resume-item .date {
@@ -10954,8 +10967,8 @@ img {
   font-weight: 500;
   font-size: 13px;
   font-family: 'Courier New', Courier, monospace;
-  color: #F4AC45;
-  border: 1px solid #F4AC45;
+  color: #870058;
+  border: 1px solid #870058;
 }
 
 .resume-items .resume-item .name {
@@ -10970,7 +10983,7 @@ img {
 }
 
 .progress-bar {
-  background-color: #F4AC45 !important;
+  background-color: #870058 !important;
 }
 
 .prog {
@@ -10995,7 +11008,7 @@ img {
   display: block;
   width: 14px;
   height: 14px;
-  background: #F4AC45;
+  background: #870058;
   border-radius: 14px;
 }
 
@@ -11010,7 +11023,7 @@ img {
   margin: 20px;
 }
 
-.radialProgressBar .overlay {
+.radialProgressBar .overlay-circle {
   border-radius: 50%;
   width: 80px;
   height: 80px;
@@ -11021,16 +11034,24 @@ img {
 }
 
 .progress-100 {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #F4AC45), color-stop(50%, transparent)), -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ddd), color-stop(50%, #ddd));
-  background-image: linear-gradient(#F4AC45 50%, transparent 50%), linear-gradient(#ddd 50%, #ddd 50%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #870058), color-stop(50%, transparent)), -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ddd), color-stop(50%, #ddd));
+  background-image: linear-gradient(#870058 50%, transparent 50%), linear-gradient(#ddd 50%, #ddd 50%);
 }
 
 i {
-  color: #F4AC45 !important;
+  color: #870058 !important;
 }
 
 .service-item i {
   font-size: 30px;
+}
+
+.prout {
+  background-color: red;
+}
+
+#inputName:focus {
+  border-bottom: #870058 solid !important;
 }
 
 #footer, #footer-home {
@@ -11521,7 +11542,7 @@ p {
   content: attr(data-text);
   position: absolute;
   left: -2px;
-  text-shadow: 3px 0 #F4AC45;
+  text-shadow: 3px 0 #870058;
   top: 2px;
   color: black;
   overflow: hidden;

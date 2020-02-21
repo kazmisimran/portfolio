@@ -1,9 +1,10 @@
 @import "./../../node_modules/bootstrap/scss/bootstrap.scss";
-$mainColor : #F4AC45;
+$mainColor : #870058;;
 $secondColor: #AEDCC0;
 
 body{
     height: 90vh;
+    font-family: 'Courier New', Courier, monospace !important;
 }
 
 #root{
@@ -11,6 +12,18 @@ body{
     margin:30px;
     overflow:hidden;
     background-color: white;
+}#870058
+
+.myfont{
+  font-family: 'Courier New', Courier, monospace !important;
+}
+
+.bg-mainColor{
+  background-color: $mainColor !important;
+}
+
+.secondColor{
+  color: $secondColor !important;
 }
 
 //HEADER Et NAVS
@@ -157,7 +170,7 @@ span{
     color:$mainColor;
 }
 
-img{
+#sim{
     max-width: 100px;
     max-height: 100px;
     display: block; 
@@ -234,7 +247,7 @@ img{
   display: flex;
   background: #ddd;
   margin: 20px;
-  .overlay{
+  .overlay-circle{
     border-radius: 50%;
     width: 80px;
     height: 80px;
@@ -260,6 +273,39 @@ i{
     font-size: 30px;
   }
 }
+
+//CLIENTS
+// .image {
+//   position: relative;
+// }
+
+
+// .overlay{
+//   opacity: 0;
+//   width: 100%;
+//   height: 100%;
+//   transition: .5s ease;
+//   background-color: $mainColor;
+// }
+
+// .box-item .a:hover .overlay{
+//   opacity: 1;
+//   z-index: 100;
+//   // width: 80%;
+//   // height: 80%;
+// }
+
+//GALERIE
+.prout{
+  background-color: red;
+}
+
+//FORM
+#inputName:focus{
+  border-bottom :  $mainColor solid !important;
+}
+
+ 
 //FOOTER
 #footer , #footer-home{
     position: fixed;

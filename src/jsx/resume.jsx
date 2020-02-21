@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Sim from './../img/sim.jpg';
+import Min from './../img/miniature.png';
+import MinDeux from './../img/miniature2.png';
 
 export default function Resume() {
 
@@ -25,7 +27,7 @@ export default function Resume() {
 
             <section className="intro d-flex flex-column align-items-center justify-content-center my-5">
                 <h1 className="glitch" data-text="RESUME">RESUME</h1>
-                <p className> <a href="/home">Home</a> / <a href="/resume">Resume</a> </p>
+                <p className> <a href="/home">Home</a> / <a href="/portfolio">Portfolio</a> </p>
 
                 <a href="#" className="mouse">
                     <div className="my-5" id="target" className="d-block">
@@ -56,7 +58,7 @@ export default function Resume() {
                     </div>
                     <div className="row d-flex align-items-center">
                         <div className="image col-12 col-md-2 d-flex justify-content-center mb-3">
-                            <img src={Sim}></img>
+                            <img src={Sim} id="sim"></img>
                         </div>
                         <div className="desc col-12 col-md-10 d-flex justify-content-start">
                             <p>                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -276,7 +278,7 @@ export default function Resume() {
                     <div className="skills circle row">
                         <div className="d-flex flex-column align-items-center mr-5 col-md-2 col-12">
                             <div class="radialProgressBar progress-100  d-flex flex-column">
-                                <div class="overlay">100%</div>
+                                <div class="overlay-circle">100%</div>
                             </div>
                             <div>
                                 <p className="">WordPress</p>
@@ -284,7 +286,7 @@ export default function Resume() {
                         </div>
                         <div className="d-flex flex-column align-items-center mr-5 col-md-2 col-12">
                             <div class="radialProgressBar progress-100  d-flex flex-column">
-                                <div class="overlay">100%</div>
+                                <div class="overlay-circle">100%</div>
                             </div>
                             <div>
                                 <p className="">PHP / MYSQL</p>
@@ -292,7 +294,7 @@ export default function Resume() {
                         </div>
                         <div className="d-flex flex-column align-items-center mr-5 col-md-2 col-12">
                             <div class="radialProgressBar progress-100  d-flex flex-column">
-                                <div class="overlay">100%</div>
+                                <div class="overlay-circle">100%</div>
                             </div>
                             <div>
                                 <p className="">Angular /<br /> Javascript</p>
@@ -300,7 +302,7 @@ export default function Resume() {
                         </div>
                         <div className="d-flex flex-column align-items-center mr-5 col-md-2 col-12">
                             <div class="radialProgressBar progress-100  d-flex flex-column">
-                                <div class="overlay">100%</div>
+                                <div class="overlay-circle">100%</div>
                             </div>
                             <div>
                                 <p className="">HTML / CSS</p>
@@ -368,7 +370,7 @@ export default function Resume() {
                                 </div>
                             </div>
                         </div>
-                        <div className="row mt-4">
+                        <div className="row mt-5">
                             <div className="col-md-4 service-item">
                                 <div className="row mb-3 align-items-center">
                                     <i class="fas fa-code mr-3"></i>
@@ -401,7 +403,70 @@ export default function Resume() {
                 </div>
             </section>
 
+            <section className="section clients container mb-5">
+                <div className="content">
+                    <div className="title mb-5">
+                        <div className="title_inner">CLIENTS</div>
+                    </div>
+                    <div className="box-items">
+                        <div className="row mb-4">
+                            <div className="col-md-4 col-12 box-item">
+                                <div className="image">
+                                    <a href="https://www.google.com">
+                                        <img src={MinDeux} alt="" className="w-100" />
+                                        <div className="overlay w-100 h-100"> </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div className="col-md-4 col-12 box-item">
+                                <div className="image">
+                                    <a href="https://www.google.com">
+                                        <img src={MinDeux} alt="" className="w-100" />
+                                        <div className="overlay w-100 h-100"> </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div className="col-md-4 col-12 box-item">
+                                <div className="image">
+                                    <a href="https://www.google.com">
+                                        <img src={MinDeux} alt="" className="w-100" />
+                                        <div className="overlay w-100 h-100"> </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row mb-5">
+                            <div className="col-md-4 col-12 box-item">
+                                <div className="image">
+                                    <a href="https://www.google.com">
+                                        <img src={MinDeux} alt="" className="w-100" />
+                                        <div className="overlay w-100 h-100"> </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div className="col-md-4 col-12 box-item">
+                                <div className="image">
+                                    <a href="https://www.google.com">
+                                        <img src={MinDeux} alt="" className="w-100" />
+                                        <div className="overlay w-100 h-100"> </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div className="col-md-4 col-12 box-item">
+                                <div className="image">
+                                    <a href="https://www.google.com">
+                                        <img src={MinDeux} alt="" className="w-100" />
+                                        <div className="overlay w-100 h-100"> </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
+
+                    </div>
+                </div>
+
+            </section>
 
 
 
