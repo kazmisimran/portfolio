@@ -12,7 +12,7 @@ body{
     margin:30px;
     overflow:hidden;
     background-color: white;
-}#870058
+}
 
 .myfont{
   font-family: 'Courier New', Courier, monospace !important;
@@ -232,9 +232,18 @@ span{
       height: 14px;
       background: $mainColor;
       border-radius: 14px;
+      .bg-gris{
+        background-color: #e9ecef !important;
+      }
     }
   }
 }
+
+.bg-gris{
+  background-color: #e9ecef !important;
+}
+
+
 //CODING SKILLS
 .radialProgressBar {
   border-radius: 50%;

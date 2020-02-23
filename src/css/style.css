@@ -10776,7 +10776,7 @@ body {
   background-color: white;
 }
 
-#870058 .myfont {
+.myfont {
   font-family: 'Courier New', Courier, monospace !important;
 }
 
@@ -11010,6 +11010,14 @@ span {
   height: 14px;
   background: #870058;
   border-radius: 14px;
+}
+
+.prog .dg span .bg-gris {
+  background-color: #e9ecef !important;
+}
+
+.bg-gris {
+  background-color: #e9ecef !important;
 }
 
 .radialProgressBar {

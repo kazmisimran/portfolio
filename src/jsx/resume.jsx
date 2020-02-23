@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import Sim from './../img/sim.jpg';
 import Min from './../img/miniature.png';
 import MinDeux from './../img/miniature2.png';
+import Footer from './footer.jsx';
+import Cadre from './cadre.jsx';
+
 
 export default function Resume() {
 
@@ -20,10 +23,7 @@ export default function Resume() {
     }
     return (
         <>
-            <div id="line-top"> </div>
-            <div id="line-bottom"></div>
-            <div id="line-left"></div>
-            <div id="line-right"></div>
+           <Cadre></Cadre>
 
             <section className="intro d-flex flex-column align-items-center justify-content-center my-5">
                 <h1 className="glitch" data-text="RESUME">RESUME</h1>
@@ -38,18 +38,6 @@ export default function Resume() {
 
 
 
-            <footer className='d-flex justify-content-between mt-5' id="footer">
-                <div className="copy mx-5">
-                    <p id="p-copy">© Sim. All rights reserved.</p>
-                </div>
-
-                <div className="soc mx-3 mb-2 ">
-                    <i className="mx-2 fab fa-instagram "></i>
-                    <i className="mx-2 fab fa-facebook-square"></i>
-                    <i className="mx-2 fab fa-linkedin-in"></i>
-                    <i className="mx-2 fab fa-twitter"></i>
-                </div>
-            </footer>
 
             <section className="section about container mt-5">
                 <div className="content">
@@ -147,39 +135,39 @@ export default function Resume() {
                         <ul className="list-unstyled">
                             <li className="my-4">
                                 <div className="d-flex">
-                                    <div className="name my-2" style={{ "width": "100%" }}>Web Design</div>
-                                    <div className="percent my-2">100%</div>
+                                    <div className="name my-2" style={{ "width": "90%" }}>HTML/CSS</div>
+                                    <div className="percent my-2">90%</div>
                                 </div>
                                 <div class="progress" style={{ "height": "3px" }}>
-                                    <div class="progress-bar" role="progressbar" style={{ "width": "100%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" role="progressbar" style={{ "width": "90%" }} >
                                     </div>
                                 </div>
                             </li>
                             <li className="my-4">
                                 <div className="d-flex">
-                                    <div className="name my-2" style={{ "width": "100%" }}>Illustrations</div>
-                                    <div className="percent my-2">100%</div>
+                                    <div className="name my-2" style={{ "width": "85%" }}>Bootstrap</div>
+                                    <div className="percent my-2">85%</div>
                                 </div>
                                 <div class="progress" style={{ "height": "3px" }}>
-                                    <div class="progress-bar" role="progressbar" style={{ "width": "100%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style={{ "width": "85%" }} ></div>
                                 </div>
                             </li>
                             <li className="my-4">
                                 <div className="d-flex">
-                                    <div className="name my-2" style={{ "width": "100%" }}>Photoshop</div>
-                                    <div className="percent my-2">100%</div>
+                                    <div className="name my-2" style={{ "width": "85%" }}>Javascript</div>
+                                    <div className="percent my-2">85%</div>
                                 </div>
                                 <div class="progress" style={{ "height": "3px" }}>
-                                    <div class="progress-bar" role="progressbar" style={{ "width": "100%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style={{ "width": "85%" }} ></div>
                                 </div>
                             </li>
                             <li className="my-4">
                                 <div className="d-flex">
-                                    <div className="name my-2" style={{ "width": "100%" }}>Graphic Design</div>
-                                    <div className="percent my-2">100%</div>
+                                    <div className="name my-2" style={{ "width": "80%" }}>React JS</div>
+                                    <div className="percent my-2">80%</div>
                                 </div>
                                 <div class="progress" style={{ "height": "3px" }}>
-                                    <div class="progress-bar" role="progressbar" style={{ "width": "100%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style={{ "width": "80%" }} ></div>
                                 </div>
                             </li>
                         </ul>
@@ -242,14 +230,14 @@ export default function Resume() {
                                         <span></span>
                                         <span></span>
                                         <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
+                                        <span className="bg-gris"></span>
+                                        <span className="bg-gris"></span>
+                                        <span className="bg-gris"></span>
                                     </span>
                                 </div>
                             </li>
                             <li className="col-md-5 col-12">
-                                <div className="name mb-1">Swahili</div>
+                                <div className="name mb-1">Dutch</div>
                                 <div className="prog position-relative d-block mb-5">
                                     <span className="dg">
                                         <span></span>
@@ -257,11 +245,11 @@ export default function Resume() {
                                         <span></span>
                                         <span></span>
                                         <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
+                                        <span className="bg-gris"></span>
+                                        <span className="bg-gris"></span>
+                                        <span className="bg-gris"></span>
+                                        <span className="bg-gris"></span>
+                                        <span className="bg-gris"></span>
                                     </span>
                                 </div>
                             </li>
@@ -270,7 +258,9 @@ export default function Resume() {
                 </div>
             </section>
 
-            <section className="section skills container pb-5 mb-5">
+            <Footer></Footer>
+
+            {/* <section className="section skills container pb-5 mb-5">
                 <div className="content ">
                     <div className="title mb-5">
                         <div className="title_inner">CODING SKILLS</div>
@@ -401,9 +391,9 @@ export default function Resume() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
-            <section className="section clients container mb-5">
+            {/* <section className="section clients container mb-5">
                 <div className="content">
                     <div className="title mb-5">
                         <div className="title_inner">CLIENTS</div>
@@ -466,7 +456,7 @@ export default function Resume() {
                     </div>
                 </div>
 
-            </section>
+            </section> */}
 
 
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import './css/style.css'
 import './../node_modules/@fortawesome/fontawesome-free/css/all.css'
@@ -11,11 +11,14 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 
 
+
 function App() {
+  const [loading, setLoading] = useState(true)
   return (
 
     <Router>
-     
+
+   
       <div>
 
         <nav className="mx-5 py-3 navbar navbar-expand-lg navbar-light bg-white d-flex justify-content-end " id='nav-courier'>
