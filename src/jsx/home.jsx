@@ -19,7 +19,6 @@ export default function Home() {
     return (
         <>
 
-        <Spinner></Spinner>
          <Cadre></Cadre>
 
             <section className="intro d-flex flex-column align-items-center justify-content-center">
